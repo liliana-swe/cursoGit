@@ -4,9 +4,277 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="css/estilos.css" />
   </head>
   <body>
-    <h1>Proyecto Empresarial</h1>
+    <!--Barra de navegación-->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link disabled"
+              href="#"
+              tabindex="-1"
+              aria-disabled="true"
+              >Disabled</a
+            >
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+    </nav>
+
+    <div class="titulo-de-página">
+      <h1>Proyecto Empresarial Aguamarina</h1>
+    </div>
+
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-ride="carousel"
+    >
+      <ol class="carousel-indicators">
+        <li
+          data-target="#carouselExampleIndicators"
+          data-slide-to="0"
+          class="active"
+        ></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="imagenes/img 1.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="imagenes/img 2.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="imagenes/img 3.jpg" class="d-block w-100" alt="..." />
+        </div>
+      </div>
+      <a
+        class="carousel-control-prev"
+        href="#carouselExampleIndicators"
+        role="button"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#carouselExampleIndicators"
+        role="button"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+    <!-- Contenedor principal para centrar el contenido y darle espacio -->
+    <div class="container py-5">
+      <h2 class="text-center mb-4">Playas</h2>
+
+      <!--
+        La clase 'row-cols-1 row-cols-md-3' es la clave para la disposición horizontal:
+        - row-cols-1: En pantallas pequeñas (por defecto), una tarjeta por fila.
+        - row-cols-md-3: En pantallas medianas (md) y superiores, tres tarjetas por fila.
+        - g-4: Añade un espacio (gutter) de 4 unidades entre las columnas.
+        -->
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- Tarjeta 1 -->
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="imagenes/img-tarjeta 1.jpg"
+              class="card-img-top"
+              alt="Imagen de tarjeta 1"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                Playa Pelícano: un paraíso de tranquilidad
+              </h5>
+              <p class="card-text">
+                Descubre un refugio privado en la costa. Con arena fina y aguas
+                cristalinas, esta playa es el lugar ideal para desconectar y
+                disfrutar de la serenidad en su máxima expresión.
+              </p>
+              <a href="#" class="btn btn-primary">Ver Propiedades</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 2 -->
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="imagenes/img-tarjeta 2.jpg"
+              class="card-img-top"
+              alt="Imagen de tarjeta 2"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                Palmar: la vida en la playa que soñaste
+              </h5>
+              <p class="card-text">
+                El vibrante corazón de la costa te espera. Palmar combina la
+                energía de un ambiente social con la paz del mar. Aquí, el sol,
+                la arena y las mejores comodidades están a tu alcance.
+              </p>
+              <a href="#" class="btn btn-primary">Ver Propiedades</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 3 -->
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="imagenes/img-tarjeta 3.jpg"
+              class="card-img-top"
+              alt="Imagen de tarjeta 3"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                Playa Potrillo: atardeceres que enamoran
+              </h5>
+              <p class="card-text">
+                YPrepárate para vivir momentos inolvidables. Con sus
+                impresionantes vistas y olas perfectas para surfear, Playa
+                Potrillo es el destino ideal para los aventureros y amantes de
+                los atardeceres dorados.
+              </p>
+              <a href="#" class="btn btn-primary">Ver Propiedades</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 
+        Inicio del Footer 
+    -->
+    <footer class="bg-dark text-white pt-5 pb-4 mt-5">
+      <div class="container text-center text-md-start">
+        <div class="row text-center text-md-start">
+          <!-- Columna de Información -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-warning">
+              Tu Paraíso en la Costa
+            </h5>
+            <p>
+              Especialistas en propiedades en las playas más exclusivas. Te
+              ayudamos a encontrar el hogar de tus sueños.
+            </p>
+          </div>
+
+          <!-- Columna de Redes Sociales -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-warning">
+              Síguenos
+            </h5>
+            <p>
+              <a href="#" class="text-white text-decoration-none">Facebook</a>
+            </p>
+            <p>
+              <a href="#" class="text-white text-decoration-none">Instagram</a>
+            </p>
+            <p>
+              <a href="#" class="text-white text-decoration-none">Twitter</a>
+            </p>
+          </div>
+
+          <!-- Columna de Contacto -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-warning">
+              Contacto
+            </h5>
+            <p>
+              <i class="fas fa-home me-3"></i> Playa Pelícano, Palmar, Playa
+              Potrillo
+            </p>
+            <p><i class="fas fa-envelope me-3"></i> contacto@example.com</p>
+            <p><i class="fas fa-phone me-3"></i> +123 456 7890</p>
+          </div>
+        </div>
+
+        <hr class="mb-4" />
+
+        <!-- Fila de Copyright -->
+        <div class="row align-items-center">
+          <div class="col-md-7 col-lg-8">
+            <p class="mb-0">
+              &copy; 2024 Vienes Raíces. Todos los derechos reservados.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- 
+        Fin del Footer 
+    -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>
 </html>
